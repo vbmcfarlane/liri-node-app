@@ -179,7 +179,7 @@ function omdbData(movie){
 //=====================================echoQuery==========================================
 function echoQuery(){
   fs.readFile('random.txt', "utf8", function(error, data){
-
+console.log(JSON.stringify(data));
   	if (error) {
             console.log(error);
     } else {
